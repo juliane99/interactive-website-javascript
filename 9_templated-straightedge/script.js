@@ -1,7 +1,7 @@
-document.getElementById("myBtn").addEventListener("click", myfunc);
-document.getElementById("myBtn1").addEventListener("click", myfunc);
-
+var btn = document.getElementById('myBtn');
 
 function myfunc() {
 	document.getElementById("demo").innerHTML = "Hello World";
 }
+
+btn.addEventListener('click', myfunc);
