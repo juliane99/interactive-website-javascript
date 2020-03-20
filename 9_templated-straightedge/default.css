@@ -255,6 +255,7 @@
 			font-size: 1.4em;
 			font-weight: 900;
 		}
+
 			
 /*********************************************************************************/
 /* Heading Titles                                                                */
@@ -295,6 +296,7 @@
 		position: relative;
 		height: 150px;
 	}
+	
 
 /*********************************************************************************/
 /* Logo                                                                          */
@@ -363,6 +365,7 @@
 	
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
+		color: #555;
 	}
 	
 	#menu .current_page_item a

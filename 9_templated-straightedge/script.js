@@ -1,3 +1,10 @@
+//interaction1
+
+var name = window.prompt ("Wie heißt du?");
+alert("Ich begrüße dich auf unsere Website " + name + ", viel spaß beim stöbern!")
+
+//interaction2
+
 var btn = document.getElementById('myBtn');
 
 function myfunc() {
@@ -5,3 +12,4 @@ function myfunc() {
 }
 
 btn.addEventListener('click', myfunc);
+
