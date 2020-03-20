@@ -1,7 +1,23 @@
 //interaction1
 
-var name = window.prompt ("Wie heißt du?");
-alert("Ich begrüße dich auf unsere Website " + name + ", viel spaß beim stöbern!")
+function myfunction1() {
+	var text;
+	var name = prompt("Wie heißt du?", "Vorname");
+	switch(name) {
+	 case "Jule":
+	   text = "Hallo Jule! !";
+	   break;
+	 case "Josef":
+	   text = "Hallo Josef, viel spaß auf dieser Seite!";
+	   break;
+	 default:
+	   text = "Du hast kein Name eingegeben, probiers nocmal!";
+	   break;
+	 }
+	 document.getElementById("thisone").innerHTML = text;
+   }
+
+
 
 //interaction2
 

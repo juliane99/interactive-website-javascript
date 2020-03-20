@@ -255,6 +255,15 @@
 			font-size: 1.4em;
 			font-weight: 900;
 		}
+		.button-small
+		{
+			padding: 1.2em 2em;
+			font-size: 1em;
+			font-weight: 600;
+			background: #242424;
+			
+		}
+
 
 			
 /*********************************************************************************/
