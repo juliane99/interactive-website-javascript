@@ -18,7 +18,13 @@ function myfunction1() {
    }
 
    // interaction2
-   
+   function filloutform() {
+	   var a = document.forms["form"] ["username"].value;
+	   if (a == "") {
+		alert("Name must be filled out");
+		return false;
+   }
+}
 //interaction3
 
 var btn = document.getElementById('myBtn');
