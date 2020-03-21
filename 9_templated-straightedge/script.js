@@ -25,6 +25,15 @@ function myfunction1() {
 		return false;
    }
 }
+
+// interaction4
+function myFunction(imgs) {
+	var expandImg = document.getElementById("expandedImg");
+	var imgText = document.getElementById("imgtext");
+	expandImg.src = imgs.src;
+	imgText.innerHTML = imgs.alt;
+	expandImg.parentElement.style.display = "block";
+  }
 //interaction3
 
 var btn = document.getElementById('myBtn');

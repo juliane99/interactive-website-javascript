@@ -2,9 +2,8 @@
 <html lang="de">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Contact Formular</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>aboutUs</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" />
     <link href="default.css" rel="stylesheet" type="text/css" media="all" />
     <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
@@ -27,15 +26,21 @@
             </div>
         </div>
     </div>
-    <div id="banner-wrapper">
-    <div id="banner" class="container">
-		<div class="box-left">
-			<h2>Customoize your Compass </h2>
-			<span>What do you want to be on it? you can be creative!</span> </div>
-		<div class="box-right">  <button class="button button-small" onclick="myfunction1()"> Let us Customize</button>
-            <p id="thisone"></p> </div>
-	</div>
-</div>
-  </body>
-  <script type="text/javascript" src="script.js"></script>
+
+
+    <div class="row">
+        <div class="column">
+          <img src="images/hand-1917895_640.png" alt="Team" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/workplace-1245776_640.jpg" alt="atWork" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="mycontainer">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:70%">
+            <div id="imgtext"></div>
+          </div>
+        </body>
+<script type="text/javascript" src="script.js"></script>
 </html>
