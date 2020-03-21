@@ -2,16 +2,16 @@
 
 function myfunction1() {
 	var text;
-	var name = prompt("Wie heißt du?", "Vorname");
+	var name = prompt("Whats your name?", "First Name");
 	switch(name) {
 	 case "Jule":
-	   text = "Hallo Jule! !";
+	   text = "Hi Jule! Your Compass will show your name on it!";
 	   break;
 	 case "Josef":
-	   text = "Hallo Josef, viel spaß auf dieser Seite!";
+	   text = "Hi Josef!,Your Compass will show your name on it!";
 	   break;
 	 default:
-	   text = "Du hast kein Name eingegeben, probiers nocmal!";
+	   text = "You have to write a name in here, then we will customize your compass!";
 	   break;
 	 }
 	 document.getElementById("thisone").innerHTML = text;
@@ -21,7 +21,7 @@ function myfunction1() {
 var btn = document.getElementById('myBtn');
 
 function myfunc() {
-	document.getElementById("demo").innerHTML = "You won a Brand new watch! Code 777";
+	document.getElementById("demo").innerHTML = "You won a Brand new Compass! Code 777";
 }
 
 btn.addEventListener('click', myfunc);

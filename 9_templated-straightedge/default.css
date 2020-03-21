@@ -39,10 +39,6 @@ p
 	line-height: 180%;
 }
 
-strong
-{
-}
-
 a
 {
 	color: #EF3535;
@@ -241,15 +237,6 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	font-weight: 600;
 	color: #FFF;
 }
-
-	.button:hover
-	{
-	}
-	
-	.button:active
-	{
-	}
-	
 	.button-big
 	{
 		padding: 1.6em 4em;
