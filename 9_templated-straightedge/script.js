@@ -16,9 +16,6 @@ function myfunction1() {
 	 }
 	 document.getElementById("thisone").innerHTML = text;
    }
-
-
-
 //interaction2
 
 var btn = document.getElementById('myBtn');
