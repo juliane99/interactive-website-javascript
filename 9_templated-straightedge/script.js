@@ -26,7 +26,7 @@ function myfunction1() {
    }
 }
 
-// interaction4
+// interaction3
 function myFunction(imgs) {
 	var expandImg = document.getElementById("expandedImg");
 	var imgText = document.getElementById("imgtext");
@@ -34,13 +34,11 @@ function myFunction(imgs) {
 	imgText.innerHTML = imgs.alt;
 	expandImg.parentElement.style.display = "block";
   }
-//interaction3
-
+  
+//interaction4
 var btn = document.getElementById('myBtn');
-
 function myfunc() {
 	document.getElementById("demo").innerHTML = "You won a Brand new Compass! Code 777";
 }
-
 btn.addEventListener('click', myfunc);
 

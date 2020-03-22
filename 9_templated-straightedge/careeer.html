@@ -18,35 +18,30 @@
             <div id="menu">
                 <ul>
                     <li><a href="index.html" accesskey="1" title="">Services</a></li>
-                    <li  class="current_page_item"><a href="customize.html" accesskey="2" title="">Customize</a></li>
+                    <li><a href="customize.html" accesskey="2" title="">Customize</a></li>
                     <li><a href="aboutUs.html" accesskey="3" title="">About Us</a></li>
-                    <li><a href="careeer.html" accesskey="4" title="">Careers</a></li>
+                    <li   class="current_page_item"><a href="careeer.html" accesskey="4" title="">Careers</a></li>
                     <li><a href="contactUS.html" accesskey="5" title="">Register</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
+  
+    <div id="interactiveText"></div>
+    
+    <script>
+        // interaction 5
 
-    <div class="row">
-        <div class="column">
-          <img src="images/hand-1917895_640.png" alt="Team" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="images/workplace-1245776_640.jpg" alt="atWork" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="images/adventure-1850673_640.jpg" alt="advenutre" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="images/compass-3408928_640.jpg" alt="compass" style="width:100%" onclick="myFunction(this);">
-        </div>
+var string = "JOIN OUR TEAM!";
+var interactiveText = string.split("");
+var getit = document.getElementById('interactiveText');
+(function animate() {
+interactiveText.length > 0 ? getit.innerHTML += interactiveText.shift() : clearTimeout(running); 
+var running = setTimeout(animate, 80);
+})();
+    </script>
 
-        <div class="mycontainer">
-            <span onclick="this.parentElement.style.display='none'" class="x">&times;</span>
-            <img id="expandedImg" style="width:60%">
-            <div id="imgtext"></div>
-          </div>
         </body>
 <script type="text/javascript" src="script.js"></script>
 </html>
