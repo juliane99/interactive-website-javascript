@@ -29,18 +29,6 @@
 
   
     <div id="interactiveText"></div>
-    
-    <script>
-        // interaction 5
-
-var string = "JOIN OUR TEAM!";
-var interactiveText = string.split("");
-var getit = document.getElementById('interactiveText');
-(function animate() {
-interactiveText.length > 0 ? getit.innerHTML += interactiveText.shift() : clearTimeout(running); 
-var running = setTimeout(animate, 80);
-})();
-    </script>
 
         </body>
 <script type="text/javascript" src="script.js"></script>

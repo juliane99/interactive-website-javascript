@@ -1,11 +1,12 @@
-//interaction1 
+//interaction1 (klappt nicht immer)
 
 var btn = document.getElementById('myBtn');
+if (btn) { // if not null 
 function myfunc() {
 	document.getElementById("push").innerHTML = "You won a Brand new Compass! Code 777";
 }
 btn.addEventListener('click', myfunc);
-
+}
 
 
 //interaction2 
@@ -27,7 +28,7 @@ function myfunction1() {
 	 document.getElementById("thisone").innerHTML = text;
    }
 
-// interaction3
+
 
   
   // interaction4
@@ -39,6 +40,14 @@ function myfunction1() {
 }
 }
 
+var string = "JOIN OUR TEAM!";
+var interactiveText = string.split("");
+var getit = document.getElementById('interactiveText');
+if (getit) {
 
+(function animate() {
+interactiveText.length > 0 ? getit.innerHTML += interactiveText.shift() : clearTimeout(running); 
+var running = setTimeout(animate, 80);
+})();
 
-
+}
