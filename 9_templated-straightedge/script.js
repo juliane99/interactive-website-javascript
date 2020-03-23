@@ -35,10 +35,11 @@ function myFunction(imgs) {
 	expandImg.parentElement.style.display = "block";
   }
   
+
 //interaction4
 var btn = document.getElementById('myBtn');
 function myfunc() {
-	document.getElementById("demo").innerHTML = "You won a Brand new Compass! Code 777";
+	document.getElementById("push").innerHTML = "You won a Brand new Compass! Code 777";
 }
 btn.addEventListener('click', myfunc);
 
