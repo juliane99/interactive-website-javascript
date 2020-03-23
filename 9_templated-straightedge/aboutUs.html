@@ -28,47 +28,30 @@
     </div>
 
     <div class="slidercontainer">  
-      <div class="showSlide fade">  
+      <div class="view fade">  
           <img src="images/adventure-1850673_640.jpg" />  
-          <div class="content">Lorem ipsum dolor sit amet</div>  
+          <div>Lorem ipsum dolor sit amet</div>  
       </div>  
-      <div class="showSlide fade">  
-          <img src="images/compass-3408928_640.jpg""/>  
-          <div class="content">Lorem ipsum dolor sit amet</div>  
+      <div class="view fade">  
+          <img src="images/compass-3408928_640.jpg" />  
+          <div>Lorem ipsum dolor sit amet</div>  
       </div>  
 
-      <div class="showSlide fade">  
+      <div class="view fade">  
           <img src="images/hand-1917895_640.png"/>  
-          <div class="content">Lorem ipsum dolor sit amet</div>  
+          <div>Lorem ipsum dolor sit amet</div>  
       </div>  
-      <div class="showSlide fade">  
+      <div class="view fade">  
           <img src="images/workplace-1245776_640.jpg"/>  
-          <div class="content">Lorem ipsum dolor sit amet</div>  
+          <div>Lorem ipsum dolor sit amet</div>  
       </div>  
       <!-- Navigation arrows -->  
-      <a class="left" onclick="nextSlide(-1)">❮</a>  
-      <a class="right" onclick="nextSlide(1)">❯</a>  
+      <a class="left" onclick="following(-1)">❮</a>  
+      <a class="right" onclick="following(1)">❯</a>  
   </div>  
 
   <script type="text/javascript">  
-    var slide_index = 1;  
-    displaySlides(slide_index);  
-    function nextSlide(n) {  
-        displaySlides(slide_index += n);  
-    }  
-    function currentSlide(n) {  
-        displaySlides(slide_index = n);  
-    }  
-    function displaySlides(n) {  
-        var i;  
-        var slides = document.getElementsByClassName("showSlide");  
-        if (n > slides.length) { slide_index = 1 }  
-        if (n < 1) { slide_index = slides.length }  
-        for (i = 0; i < slides.length; i++) {  
-            slides[i].style.display = "none";  
-        }  
-        slides[slide_index - 1].style.display = "block";  
-    }  
+   
 </script>  
         </body>
 <script type="text/javascript" src="script.js"></script>
