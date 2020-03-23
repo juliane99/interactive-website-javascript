@@ -1,4 +1,14 @@
-//interaction1
+//interaction1 
+
+var btn = document.getElementById('myBtn');
+function myfunc() {
+	document.getElementById("push").innerHTML = "You won a Brand new Compass! Code 777";
+}
+btn.addEventListener('click', myfunc);
+
+
+
+//interaction2 
 
 function myfunction1() {
 	var text;
@@ -17,15 +27,6 @@ function myfunction1() {
 	 document.getElementById("thisone").innerHTML = text;
    }
 
-   // interaction2
-   function filloutform() {
-	   var a = document.forms["form"] ["username"].value;
-	   if (a == "") {
-		alert("Name must be filled out");
-		return false;
-   }
-}
-
 // interaction3
 function myFunction(imgs) {
 	var expandImg = document.getElementById("expandedImg");
@@ -35,11 +36,15 @@ function myFunction(imgs) {
 	expandImg.parentElement.style.display = "block";
   }
   
-
-//interaction4
-var btn = document.getElementById('myBtn');
-function myfunc() {
-	document.getElementById("push").innerHTML = "You won a Brand new Compass! Code 777";
+  // interaction4
+  function filloutform() {
+	var a = document.forms["form"] ["username"].value;
+	if (a == "") {
+	 alert("Name must be filled out");
+	 return false;
 }
-btn.addEventListener('click', myfunc);
+}
+
+
+
 
