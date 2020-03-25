@@ -1,14 +1,13 @@
-//interaction1 (klappt nicht immer)
-
-var btn = document.getElementById('Button1');
-if (btn) { // if not null 
+//interaction1 
+window.addEventListener("load", getElements);
+var btn;
+function getElements() {
+	btn = document.getElementById('Button1');
+	btn.addEventListener('click', myfunc);
+}
 function myfunc() {
 	document.getElementById("push").innerHTML = "You won a Brand new Compass! Code 777";
 }
-btn.addEventListener('click', myfunc);
-}
-
-
 //interaction2 
 
 function myfunction1() {
