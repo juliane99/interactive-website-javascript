@@ -1,6 +1,6 @@
 //interaction1 (klappt nicht immer)
 
-var btn = document.getElementById('myBtn');
+var btn = document.getElementById('Button1');
 if (btn) { // if not null 
 function myfunc() {
 	document.getElementById("push").innerHTML = "You won a Brand new Compass! Code 777";
@@ -27,19 +27,10 @@ function myfunction1() {
 	 }
 	 document.getElementById("thisone").innerHTML = text;
    }
-
-
-
   
-  // interaction4
-  function filloutform() {
-	var a = document.forms["form"] ["username"].value;
-	if (a == "") {
-	 alert("Name must be filled out");
-	 return false;
-}
-}
-
+ // interaction4
+ 
+//interaction 5
 var string = "JOIN OUR TEAM!";
 var interactiveText = string.split("");
 var getit = document.getElementById('interactiveText');
