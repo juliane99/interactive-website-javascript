@@ -27,51 +27,27 @@
         </div>
     </div>
 
-    <div class="slidercontainer">  
-      <div class="view fade">  
-          <img src="images/adventure-1850673_640.jpg" />  
-          <div>Lorem ipsum dolor sit amet</div>  
+    <div class="imagecontainer">  
+      <div class="view">  
+          <img src="images/adventure-1850673_640.jpg" /> 
       </div>  
-      <div class="view fade">  
-          <img src="images/compass-3408928_640.jpg" />  
-          <div>Lorem ipsum dolor sit amet</div>  
+      <div class="view">  
+          <img src="images/compass-3408928_640.jpg" />   
       </div>  
-
-      <div class="view fade">  
+      <div class="view">  
           <img src="images/hand-1917895_640.png"/>  
-          <div>Lorem ipsum dolor sit amet</div>  
       </div>  
-      <div class="view fade">  
-          <img src="images/workplace-1245776_640.jpg"/>  
-          <div>Lorem ipsum dolor sit amet</div>  
+      <div class="view">  
+          <img src="images/workplace-1245776_640.jpg"/>    
       </div>  
       <!-- Navigation arrows -->  
-      <a class="left" onclick="following(-1)">❮</a>  
-      <a class="right" onclick="following(1)">❯</a>  
+      <a class="goleft" onclick="following(-1)">❮</a>  
+      <a class="goright" onclick="following(1)">❯</a>  
   </div>  
 
-  
-<!-- Interaction -->
-  <script type="text/javascript">  
-   var picture = 1;  
-slides(picture);  
-function following(n) {  
-	slides(picture += n);  
-}  
-function currentSlide(n) {  
-	slides(picture = n);  
-}  
-function slides(n) {  
-	var i;  
-	var slides = document.getElementsByClassName("view");  
-	if (n > slides.length) { picture = 1 }  
-	if (n < 1) { picture = slides.length }  
-	for (i = 0; i < slides.length; i++) {  
-		slides[i].style.display = "none";  
-	}  
-	slides[picture - 1].style.display = "block";  
-}  
-</script>  
+  <div id="copyright" class="container">
+	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
         </body>
 <script type="text/javascript" src="script.js"></script>
 </html>

@@ -45,7 +45,7 @@ a
 
 a:hover
 {
-	text-decoration: none;
+	color: rgb(116, 12, 12);
 }
 
 .container
@@ -53,76 +53,6 @@ a:hover
 	margin: 0px auto;
 	width: 1200px;
 }
-  
-  h2 {
-	text-align: center;
-	margin: 0 0 20px;
-  }
-  
-  .form {
-	padding: 30px 40px;
-  }
-  
- 
-  
-  .form-control {
-	margin-bottom: 10px;
-	padding-bottom: 20px;
-	position: relative;
-  }
-  
-  .form-control label {
-	color: #777;
-	display: block;
-	margin-bottom: 5px;
-  }
-  
-  .form-control input {
-	border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	width: 100%;
-	padding: 10px;
-	font-size: 14px;
-  }
-  
-  .form-control input:focus {
-	outline: 0;
-	border-color: #777;
-  }
-  
-  .form-control.success input {
-	border-color: var(--success-color);
-  }
-  
-  .form-control.error input {
-	border-color: var(--error-color);
-  }
-  
-  .form-control small {
-	color: var(--error-color);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	visibility: hidden;
-  }
-  
-  .form-control.error small {
-	visibility: visible;
-  }
-  
-  .form button {
-	cursor: pointer;
-	background-color: #db3934;
-	border: 2px solid #db3934;
-	border-radius: 4px;
-	color: #fff;
-	display: block;
-	font-size: 16px;
-	padding: 10px;
-	margin-top: 20px;
-	width: 100%;
-  }
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
@@ -167,40 +97,8 @@ a:hover
 	width: 25%;
 	padding: 10px;
   }
+/* inteactive Text*/
 
-.column img {
-	opacity: 0.8; 
-	cursor: pointer; 
-  }
-  
-  .column img:hover {
-	opacity: 1;
-  }
-  
-  .mycontainer {
-	position: relative;
-	display: none;
-  }
-  .x {
-	position: relative;;
-	top: 20px;
-	right: 10x;
-	color: white;
-	font-size: 35px;
-	cursor: pointer;
-  }
-  row:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
-  #imgtext {
-	position: absolute;
-	bottom: 15px;
-	left: 15px;
-	color: white;
-	font-size: 20px;
-  }
   * {
 	box-sizing: border-box;
   }	
@@ -215,6 +113,7 @@ a:hover
 	font-weight: bold;
 	text-align: center;
  }
+ /* Image Slider*/
   
  .view {  
 	display: none  
@@ -222,37 +121,31 @@ a:hover
 	.view img {  
 		width: 100%;  
 	}  
-.slidercontainer {  
+.imagecontainer {  
 	max-width: 1000px;  
 	position: relative;  
 	margin: auto;  
 }  
-.fade {  
-	-webkit-animation-name: fade;  
-	-webkit-animation-duration: 1.5s;  
-	animation-name: fade;  
-	animation-duration: 1.5s;  
-}
-	.left, .right {  
+
+	.goleft, .goright {  
 		cursor: pointer;  
 		position: absolute;  
 		top: 50%;  
 		width: auto;  
 		padding: 16px;  
 		margin-top: -22px;  
-		color: white;  
-		font-weight: bold;  
-		font-size: 18px;  
+		color: rgb(221, 8, 8);   
 		transition: 0.6s ease;  
 		border-radius: 0 3px 3px 0;  
 	}  
-	.right {  
+	.goright {  
 		right: 0;  
 		border-radius: 3px 0 0 3px;  
 	}  
-		.left:hover, .right:hover {  
-			background-color: rgba(115, 115, 115, 0.8);  
+		.goleft:hover, .goright:hover {  
+			background-color: rgba(255, 255, 255, 0.6);  
 		}
+
 		
 /*********************************************************************************/
 /* List Styles                                                                   */
@@ -305,7 +198,7 @@ ul.style1 a
 ul.style1 a:hover
 {
 	text-decoration: underline;
-	color: #525252;
+	color: #a82929;
 }
 
 ul.style2
