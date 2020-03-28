@@ -1,4 +1,4 @@
-//interaction1 
+//interaction1 Button onclick
 
 window.addEventListener("load", getElements);
 var btn;
@@ -9,7 +9,7 @@ function getElements() {
 function myfunc() {
 	document.getElementById("push").innerHTML = "You won a Brand new Compass! Code 777";
 }
-//interaction2 
+//interaction2 Button Prompt
 
 function myfunction1() {
 	var text;
@@ -29,7 +29,7 @@ function myfunction1() {
    }
 
 
-//interaction 3
+//interaction 3 Text Animation
 var string = "JOIN OUR TEAM!";
 var interactiveText = string.split("");
 var getit = document.getElementById('interactiveText');
@@ -42,7 +42,7 @@ var running = setTimeout(animate, 80);
 
 }
 
-// interaction4
+// interaction4 Picture Slider
 
 var picture = 1;  
 slides(picture);  
