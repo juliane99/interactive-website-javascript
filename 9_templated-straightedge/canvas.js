@@ -1,3 +1,5 @@
+//onclick
+document.addEventListener("click", animateCircle);
 // Interaction 5: Canvas 
 
 var canvas = document.querySelector('canvas');
