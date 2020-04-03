@@ -11,7 +11,7 @@ function myfunc() {
 }
 //interaction2 Button Prompt
 
-function myfunction1() {
+function userInput() {
 	var text;
 	var name = prompt("Whats your name?", "First Name");
 	switch(name) {
@@ -25,13 +25,13 @@ function myfunction1() {
 	   text = "You have to write a name in here, then we will customize your compass!";
 	   break;
 	 }
-	 document.getElementById("thisone").innerHTML = text;
+	 document.getElementById("input").innerHTML = text;
    }
 
 
 //interaction 3 Text Animation
-var string = "JOIN OUR TEAM!";
-var interactiveText = string.split("");
+var headline = "JOIN OUR TEAM!";
+var interactiveText = headline.split("");
 var getit = document.getElementById('interactiveText');
 if (getit) {
 
