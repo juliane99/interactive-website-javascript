@@ -45,22 +45,27 @@ var running = setTimeout(animate, 80);
 }
 
 // interaction4 Picture Slider
+var start = 0;
+var pictures = []
+var onscreen = 1500;
 
-var picture = 1;  
-slides(picture);  
-function following(n) {  
-	slides(picture += n);  
-}  
-function currentSlide(n) {  
-	slides(picture = n);  
-}  
-function slides(n) {  
-	var i;  
-	var slides = document.getElementsByClassName("view");  
-	if (n > slides.length) { picture = 1 }  
-	if (n < 1) { picture = slides.length }  
-	for (i = 0; i < slides.length; i++) {  
-		slides[i].style.display = "none";  
-	}  
-	slides[picture - 1].style.display = "block";  
-}  
+pictures[0] = "images/map-3409359_1920.jpg";
+pictures[1] = "images/adventure-1850673_640.jpg";
+pictures[2] = "images/compass-3408928_640.jpg";
+pictures[3] ="images/paper-3213924_1920.jpg";
+pictures[4] ="images/nature-2592000_1920.jpg";
+pictures[5] ="images/workplace-1245776_640.jpg";
+
+function slideShow(){
+	document.slideShow.src = pictures[start];
+
+	if(start <pictures.length - 1) {
+		start++
+	} else {
+		start = 0;
+	}
+	
+	setTimeout("slideShow()", onscreen);
+}
+
+window.onload=slideShow;
