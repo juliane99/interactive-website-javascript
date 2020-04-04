@@ -1,5 +1,6 @@
    
 // Interaction 5: Canvas 
+
 var canvas = document.querySelector('canvas');
 
 // fit entire width and heigt
@@ -7,7 +8,7 @@ canvas.width = 1255;
 canvas.height = 300;
 
 // new variable 
-var context = canvas.getContext('2d'); // draw 2d elements with vriable c
+var context = canvas.getContext('2d'); // draw 2d elements with vriable context
 
 console.log('canvas');
 
@@ -29,6 +30,8 @@ document.querySelector('canvas').onclick = function animateCircle(){
     context.beginPath();
     context.arc(x, y, circleRadius, 0, Math.PI * 2, false);
     context.strokeStyle = 'red';
+    context.fillStyle = "white";
+    context.fill();
     context.stroke();
 
     if (x + circleRadius > 1255 || x - circleRadius < 0) { // condition x 

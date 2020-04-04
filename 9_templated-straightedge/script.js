@@ -1,4 +1,4 @@
-//interaction1 Button onclick
+//interaction1: "click" Button
 
 window.addEventListener("load", getElements);
 var btn;
@@ -9,7 +9,9 @@ function getElements() {
 function myfunc() {
 	document.getElementById("push").innerHTML = "You won a Brand new Compass! Code 777";
 }
-//interaction2 Button Prompt
+
+
+//interaction2: Prompt Button
 
 function userInput() {
 	var text;
@@ -29,7 +31,7 @@ function userInput() {
    }
 
 
-//interaction 3 Text Animation
+//interaction 3: Text Animation
 var headline = "JOIN OUR TEAM!";
 var interactiveText = headline.split("");
 var getit = document.getElementById('interactiveText');
