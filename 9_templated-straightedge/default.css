@@ -40,12 +40,12 @@ p
 }
 a
 {
-	color: #EF3535;
+	color:#242424;
 }
 
 a:hover
 {
-	color: rgb(116, 12, 12);
+	color:  #242424;
 }
 
 .container
@@ -260,7 +260,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 {
 	display: inline-block;
 	padding: 1em 3em;
-	background: #E7392D;
+	background: rgb(65, 143, 173);
 	-moz-transition: opacity 0.25s ease-in-out;
 	-webkit-transition: opacity 0.25s ease-in-out;
 	-o-transition: opacity 0.25s ease-in-out;
@@ -284,7 +284,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 		padding: 1.2em 2em;
 		font-size: 1em;
 		font-weight: 600;
-		background: #242424;
+		background: rgb(65, 143, 173);
 		
 	}
 
@@ -320,7 +320,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 
 #header-wrapper
 {
-	border-top: 8px solid #EF3535;
+	border-top: 8px solid rgb(65, 143, 173);
 }
 
 #header
@@ -439,7 +439,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	display: block;
 	padding-top: 0.50em;
 	font-size: 1.4em;
-	color: #EF3535;
+	color: #242424;
 }
 
 /*********************************************************************************/
@@ -518,7 +518,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 #featured
 {
 	height: 30em;
-	background-image: url(images/banner.jpg);
+	background-image: url(images/nature-2592000_1920.jpg);
 	background-position: center;
 	background-size: cover;
 }
