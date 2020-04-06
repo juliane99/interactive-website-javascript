@@ -49,23 +49,23 @@ var start = 0;
 var pictures = []
 var onscreen = 1500;
 
-pictures[0] = "images/map-3409359_1920.jpg";
-pictures[1] = "images/adventure-1850673_640.jpg";
-pictures[2] = "images/compass-3408928_640.jpg";
-pictures[3] ="images/paper-3213924_1920.jpg";
+pictures[0] ="images/paper-3213924_1920.jpg"; 
+pictures[1] ="images/adventure-1850673_640.jpg";
+pictures[2] ="images/compass-3408928_640.jpg";
+pictures[3] ="images/map-3409359_1920.jpg";
 pictures[4] ="images/nature-2592000_1920.jpg";
 pictures[5] ="images/workplace-1245776_640.jpg";
 
-function slideShow(){
+function slide(){
 	document.slideShow.src = pictures[start];
 
 	if(start <pictures.length - 1) {
-		start++
+		start++;
 	} else {
 		start = 0;
 	}
 	
-	setTimeout("slideShow()", onscreen);
+	setTimeout("slide()", onscreen);
 }
 
-window.onload=slideShow;
+window.onload=slide; 
