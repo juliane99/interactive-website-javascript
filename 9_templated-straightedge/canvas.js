@@ -29,9 +29,9 @@ document.querySelector('canvas').onclick = function animateCircle(){
 
     context.beginPath();
     context.arc(x, y, circleRadius, 0, Math.PI * 2, false);
-    context.strokeStyle = 'blue';
-   // context.fillStyle = "white";
-    // context.fill();
+    context.strokeStyle = 'white';
+   context.fillStyle = "blue";
+    context.fill();
     context.stroke();
 
     if (x + circleRadius > 1255 || x - circleRadius < 0) { // condition x 
